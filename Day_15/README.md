@@ -1,5 +1,3 @@
-Great! If your project is structured to run from a `main.py` file, you can update the instructions in the README.md file accordingly. Here's the README.md content with instructions for running the project from a `main.py` file:
-
 ```markdown
 # Coffee Machine Simulator in Python
 
