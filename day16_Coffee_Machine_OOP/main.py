@@ -6,9 +6,10 @@ x = Menu()
 z = CoffeeMaker()
 m = MoneyMachine()
 
+options = x.get_items()
 should_continue = True
 while should_continue:
-    order = input("What would you like? (espresso/latte/cappuccino): ").lower()
+    order = input(f"What would you like? ({options}): ").lower()
     if order == 'espresso' or order == 'latte' or order == 'cappuccino':
         user_request = x.find_drink(order)
         if z.is_resource_sufficient(user_request):
