@@ -1,5 +1,3 @@
-Certainly! Here's a simplified project description in markdown format:
-
 ```markdown
 # Turtle Graphics Art
 
