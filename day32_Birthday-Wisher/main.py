@@ -16,10 +16,13 @@ day = current_date.day
 
 df = pandas.read_csv("birthdays.csv")
 data = df.to_dict(orient='records')
-
 i = 0
 while i < len(data):
-    if data[i]["year"] == year:
+    recipient_year = data[i]["year"]
+    recipient_month = data[i]["month"]
+    recipient_day = data[i]["day"]
+    check_date = recipient_year == year and recipient_month == month and recipient_day == day
+    if check_date:
         recipient_name = data[i]["name"]
         recipient_mail = data[i]["email"]
 
